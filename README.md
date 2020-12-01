@@ -39,7 +39,7 @@ For the first use do not enter any parameters in input:
 ### More Usages
 After the first use, two files will be generated which must be entered as input parameters for subsequent uses:
 
-- `python3 flightradar24_scraper.py flight_codes_dd-mmm-aaaa.txt arrivals_until_dd-mmm-aaaa.csv`
+- `python3 flightradar24_scraper.py flight_codes_dd-mmm-yyyy.txt arrivals_until_dd-mmm-yyyy.csv`
 
 ## Advice
 It is recommended to use the program at least once a day to collect the greatest number of flights and to have less extraction times.
