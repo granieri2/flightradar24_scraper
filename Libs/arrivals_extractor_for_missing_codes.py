@@ -17,17 +17,10 @@ def options():
 	options.headless = False
 
 	return options
-
-def black_friday_popup_closure(b):
-	b.implicitly_wait(5)
-	if b.find_elements_by_xpath('//*[@id="subscription-promo-close"]'):
-		b.find_element_by_xpath('//*[@id="subscription-promo-close"]').click()
 	
 def login(username, password, b): #login to the flightradar24 website
 	b.implicitly_wait(5)
 	b.find_element_by_xpath("//button[contains(@class, 'btn') and contains(@class, 'btn-blue')]").click()
-
-	black_friday_popup_closure(b)
 	
 	b.implicitly_wait(5)
 	b.find_element_by_xpath("//span[contains(@class, 'premium-menu-title') and contains(@class, 'premium-menu-title-login')]").click()
