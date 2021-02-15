@@ -25,7 +25,7 @@ Install Selenium:
 
 On Windows you might have to use `python` without the version (`3`) suffix.
 
-To use the scraper on Windows download [geckodriver](https://chromedriver.chromium.org/) (if you use Google Chrome) or [chromedriver](https://github.com/mozilla/geckodriver/releases) (if you use Firefox).
+To use the scraper on Windows download [geckodriver](https://chromedriver.chromium.org/) (if you use Firefox) or [chromedriver](https://github.com/mozilla/geckodriver/releases) (if you use Google Chrome).
 
 **To use the scraper you must have activated the Business plan on Flightradar24.**<br />
 **After activating the Business plan, enter the login data in `credentials.py`.**
