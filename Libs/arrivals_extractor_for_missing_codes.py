@@ -157,8 +157,7 @@ def CSVCreation(dictionary_flights_today, file_name, b):
 
 def main(dictionary_flights_today, check_usage):
 	b = webdriver.Firefox(options=options(), firefox_profile=incognito())
-	#b = webdriver.Firefox(options=options, firefox_profile=incognito(), executable_path=r'C:\Users\jj\Documents\ubuntuVB\ubuntu\Documenti\tirocinio\scraping flightradar\geckodriver.exe')
-	
+
 	b.get("https://www.flightradar24.com/")
 
 	login(credentials.username, credentials.password, b)
