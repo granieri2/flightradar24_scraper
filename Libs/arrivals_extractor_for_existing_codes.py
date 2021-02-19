@@ -125,7 +125,6 @@ def CSVCreation(dict_flights, b):
 
 def main(dict_flights):
 	b = webdriver.Firefox(options=options(), firefox_profile=incognito())
-	#b = webdriver.Firefox(options=options, firefox_profile=incognito(), executable_path=r'C:\Users\jj\Documents\ubuntuVB\ubuntu\Documenti\tirocinio\scraping flightradar\geckodriver.exe')
 
 	file_name = CSVCreation(dict_flights, b)
 
