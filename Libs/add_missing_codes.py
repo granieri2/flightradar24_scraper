@@ -20,8 +20,8 @@ def addedMissingFlights(main_dictionary, missing_flights_dictionary):
 	return main_dictionary
 
 def dictionaryInTextFile(complete_dictionary):
-	current_date = datetime.datetime.now().strftime('%d-%b-%Y')
-	file_name = 'flight_codes_' + current_date + '.txt'
+	current_date = datetime.datetime.now().strftime('%Y_%m_%d')
+	file_name = current_date + "_flight_codes.txt"
 	
 	with open(file_name, 'w') as f:
 	    print(sortDict(complete_dictionary), file=f)
