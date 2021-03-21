@@ -17,9 +17,9 @@ def addCSVRows(CSV_file_name_to_add, CSV_file_name_to_create): #extracts lines f
             line_count += 1
 
 def main(complete_CSV, new_CSV, new_CSV_2):
-    current_date = datetime.datetime.now().strftime('%d-%b-%Y')
-    file_name = "arrivals_until_" + current_date + ".csv"
-
+    current_date = datetime.datetime.now().strftime('%Y_%m_%d')
+    file_name = current_date + "_flight_details.csv"
+    
     with open(file_name, "w") as CSV_file:
         csv_output = csv.writer(CSV_file)
         csv_output.writerow(['Flight', 'Day', 'Flight From', 'Flight To', 'Aircraft', 'Flight Time', 'Scheduled Time Departure', 'Actual Time Departure', ' Scheduled Time Arrival', 'Status'])
